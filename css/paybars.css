@@ -72,15 +72,16 @@ input.error, textarea.error {
 	box-sizing: border-box;
 	color: #000000;
 	background-color: #ffc100;
-	font-size: 16px;
+	font-size: 18px;
 	font-family: 'ralewayblack', sans-serif;
-	padding: 16px 20px;
+	padding: 14px 20px;
 	text-align: center;
 	width: 100%;
 	max-width: 560px;
 	border-radius: 10px;
 	border: 0;
 	font-weight: normal;
+	max-width: 300px;
 }
 .pay-block .btn:hover {
 	background-color: #e6ae00;
@@ -350,7 +351,6 @@ input.error, textarea.error {
 
 	.pay-block .btn {
 		font-size: 14px;
-		max-width: 300px;
 		margin: 0 auto;
 	}
 
