@@ -109,10 +109,10 @@ input.error, textarea.error {
 }
 .pay-title {
 	display: block;
-	font-size: 16px;
+	font-size: 20px;
 	font-family: 'ralewaybold', sans-serif;
 	color: #000000;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 .pay-title label {
 	display: inline;
@@ -127,7 +127,7 @@ input.error, textarea.error {
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .payer {
 	margin-right: 30px;
@@ -139,7 +139,7 @@ input.error, textarea.error {
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
-	font-size: 14px;
+	font-size: 16px;
 	position: relative;
 	padding-left: 30px;
 	cursor: pointer;
@@ -150,14 +150,27 @@ input.error, textarea.error {
 	box-sizing: border-box;
 	width: 20px;
 	height: 20px;
-	border-radius: 50%;
-	border: 2px solid #ffc100;
+	border-radius: 4px;
+	background-color: #eff0f4;
 	position: absolute;
 	left: 0;
 	top: calc(50% - 10px);
 }
 .payer span.active:before {
 	background-color: #ffc100;
+}
+.payer span.active:after {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 3px;
+	top: calc(50% - 7px);
+	background-image: url('../i/check.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 .pay-form {
 	box-sizing: border-box;
@@ -232,7 +245,7 @@ input.error, textarea.error {
 }
 
 .b-input, .b-select {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .b-input input, .b-input textarea, .b-select select {
 	display: block;
@@ -355,6 +368,13 @@ input.error, textarea.error {
 		display: none;
 	}
 	.pay-title {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.payers {
+		margin-bottom: 20px;
+	}
+	.payer span {
 		font-size: 14px;
 	}
 	.pay-buttons.active, .pay-buttons.mobile.active {
@@ -386,6 +406,9 @@ input.error, textarea.error {
 		margin-right: 0;
 	}
 
+	.b-input, .b-select {
+		margin-bottom: 20px;
+	}
 	.b-input input, .b-input textarea, .b-select select {
 		font-size: 14px;
 	}
