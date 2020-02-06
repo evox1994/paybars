@@ -59,7 +59,7 @@ input.error, textarea.error {
 	border-color: #ff0000 !important;
 }
 
-.title {
+.pay-block .title {
 	display: block;
 	font-size: 40px;
 	font-family: "ralewaybold", sans-serif;
@@ -67,7 +67,7 @@ input.error, textarea.error {
 	color: #000000;
 }
 
-.btn {
+.pay-block .btn {
 	display: block;
 	box-sizing: border-box;
 	color: #000000;
@@ -80,18 +80,21 @@ input.error, textarea.error {
 	max-width: 560px;
 	border-radius: 10px;
 	border: 0;
+	font-weight: normal;
 }
-.btn:hover {
+.pay-block .btn:hover {
 	background-color: #e6ae00;
 }
-.btn.btn-gray {
+.pay-block .btn.btn-gray {
 	background-color: #999999;
+	border: 0;
+	color: #000000;
 }
 
-.form-btn {
+.pay-block .form-btn {
 	display: none;
 }
-.form-btn.active {
+.pay-block .form-btn.active {
 	display: block;
 }
 
@@ -237,6 +240,7 @@ input.error, textarea.error {
 	background-color: #eff0f4;
 	border-radius: 10px;
 	color: #000000;
+	font-weight: normal;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-webkit-transition: all 0.3s;
@@ -321,11 +325,11 @@ input.error, textarea.error {
 		padding: 0 10px;
 	}
 
-	.title {
+	.pay-block .title {
 		font-size: 20px;
 	}
 
-	.btn {
+	.pay-block .btn {
 		font-size: 14px;
 		max-width: 300px;
 		margin: 0 auto;
@@ -333,7 +337,7 @@ input.error, textarea.error {
 
 	.pay-block {
 		text-align: center;
-		padding: 30px 0 120px;
+		padding: 30px 0;
 	}
 	.pay-wrap {
 		padding-right: 0;
@@ -381,9 +385,6 @@ input.error, textarea.error {
 	}
 }
 @media screen and (max-width: 460px){
-	.pay-block {
-		padding: 30px 0 180px;
-	}
 	.pay-buttons.active, .pay-buttons.mobile.active {
 		display: block;
 	}
