@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="keywords" content=''>
+	<meta name="description" content=''>
+
+	<meta name="format-detection" content="telephone=no">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<link rel="stylesheet" href="css/paybars.css" type="text/css">
+
+</head>
+<body>
+	<div class="pay-block">
+		<div class="container">
+			<h2 class="title">Оплата банковской картой услуг ГПБ "Барс"</h2>
+			<div class="pay-wrap">
+				<div class="pay-title">Выберите вид плательщика</div>
+				<div class="payers">
+					<div class="payer"><span data-form="#fiz-form" data-swap=".fiz">Физическое лицо</span></div>
+					<div class="payer"><span data-form="#ur-form" data-swap=".ur">Юридическое лицо</span></div>
+				</div>
+				<div class="pay-form" id="fiz-form">
+					<form>
+						<input type="hidden" name="payer" value="Физическое лицо">
+						<div class="b-select">
+							<div class="pay-title">Получатель платежа (указан в договоре)</div>
+							<label class="select-wrap">
+								<select>
+									<option value="OOO BARS">ООО "БАРС"</option>
+									<option value="OOO Ohr fir Bars">ООО "Охранная фирма Барс"</option>
+									<option value="OOO COP Bars">ООО "ЧОП Барс"</option>
+								</select>
+							</label>
+						</div>
+						<div class="b-input">
+							<div class="pay-title"><label>Номер договора</label></div>
+							<input type="text" placeholder="1234 567890">
+						</div>
+						<div class="b-input">
+							<div class="pay-title"><label>ФИО (на кого оформлен договор)</label></div>
+							<input type="text" placeholder="Иванов И.И.">
+						</div>
+						<div class="b-input">
+							<div class="pay-title"><label>Адрес (город, улица, № дома/гаража, № квартиры)</label></div>
+							<input type="text" placeholder="Томск, пр. Ленина 1, кв. 10">
+						</div>
+						<div class="b-input">
+							<div class="pay-title"><label>Назначение платежа (услуги + период)</label></div>
+							<textarea rows="5" placeholder="Оплата охраны квартиры (датчик дыма, видеонаблюдение). Январь 2020 года."></textarea>
+						</div>
+						<div class="b-input">
+							<div class="pay-title"><label>Сумма платежа</label></div>
+							<input type="number" inputmode="numeric" placeholder="2500">
+						</div>
+						<div class="pay-buttons active">
+							<div class="pay-buttons-item mobile">
+								<div class="text">2. Заполните все поля и&nbsp;перейдите к&nbsp;оплате</div>
+							</div>
+							<div class="pay-buttons-item">
+								<div class="btn btn-gray form-btn active">Оплатить</div>
+								<button type="submit" class="btn submit-btn form-btn">Оплатить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="pay-form" id="ur-form">
+					<form>
+						<input type="hidden" name="payer" value="Юридическое лицо">
+						<div class="b-select">
+							<div class="pay-title">Получатель платежа (указан в договоре)</div>
+							<label class="select-wrap">
+								<select>
+									<option value="OOO BARS">ООО "БАРС"</option>
+									<option value="OOO Ohr fir Bars">ООО "Охранная фирма Барс"</option>
+									<option value="OOO COP Bars">ООО "ЧОП Барс"</option>
+								</select>
+							</label>
+						</div>
+						<div class="b-input">
+							<div class="pay-title"><label>Номер договора</label></div>
+							<input type="text" placeholder="1234 567890">
+						</div>
+						<div class="b-input">
+							<div class="pay-title"><label>Название вашей организации (указанная в договоре)</label></div>
+							<input type="text" placeholder="ИП Иванов И.И.">
+						</div>
+						<div class="b-input">
+							<div class="pay-title"><label>ИНН</label></div>
+							<input type="number" inputmode="numeric" placeholder="0000000001">
+						</div>
+						<div class="b-input">
+							<div class="pay-title"><label>Назначение платежа (услуги + период)</label></div>
+							<textarea rows="5" placeholder="Оплата тревожной кнопки. Январь 2020 года."></textarea>
+						</div>
+						<div class="b-input">
+							<div class="pay-title"><label>Сумма платежа</label></div>
+							<input type="number" inputmode="numeric" placeholder="2500">
+						</div>
+						<div class="pay-buttons active">
+							<div class="pay-buttons-item mobile">
+								<div class="text">2. Заполните все поля и&nbsp;перейдите к&nbsp;оплате</div>
+							</div>
+							<div class="pay-buttons-item">
+								<div class="btn btn-gray form-btn active">Оплатить</div>
+								<button type="submit" class="btn submit-btn form-btn">Оплатить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="pay-buttons mobile swap-el active">
+					<div class="pay-buttons-item">
+						<div class="text">1. Нажмите на нужный пункт</div>
+					</div>
+					<div class="pay-buttons-item">
+						<div class="btn btn-gray">Оплатить</div>
+					</div>
+				</div>
+				<div class="pay-fix">
+					<div class="text swap-el active">
+						<p>С помощью этой формы вы сможете произвести оплату услуг по заключенным договорам с компаниями: </p>
+						<ul>
+							<li>ООО "БАРС"</li>
+							<li>ООО "Охранная фирма Барс"</li>
+							<li>ООО "ЧОП Барс"</li>
+						</ul>
+						<br>
+						<p>Выберите вид плательщика.</p>
+					</div>
+					<div class="text swap-el fiz">
+						<p>При оплате услуг как физическое лицо вам необходимо указать:<br>1) Получатель платежа (юридическое лицо, с которым у вас оформлен договор).<br>2) Номер договора (прописыван в заголовке договора);<br>3) ФИО плательщика (на кого оформлен договор);<br>4) Адрес объекта (указанный в договоре);<br>5) Назначение платежа (какие услуги оплачиваете и за какой период).</p>
+					</div>
+					<div class="text swap-el ur">
+						<p>При оплате услуг как юридическое лицо вам необходимо указать:<br>1) Получатель платежа (юридическое лицо, с которым у вас оформлен договор).<br>2) Номер договора (прописыван в заголовке договора);<br>3) Название вашей организации (на которую оформлен договор);<br>4) ИНН (организации, указанной в договоре);<br>5) Назначение платежа (какие услуги оплачиваете и за какой период).</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/paybars.js"></script>
+</body>
+</html>

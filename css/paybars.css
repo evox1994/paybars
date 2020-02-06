@@ -1,0 +1,381 @@
+@charset "utf-8";
+
+html,
+body {
+	position: relative;
+}
+body {
+	min-width: 300px;
+	text-align: center;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+	color: #000000;
+	font-family: 'ralewayblack', sans-serif;
+}
+
+.container {
+	box-sizing: border-box;
+	max-width: 1230px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+*:focus {
+	outline:none;
+}
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+button {
+	font-family: 'ralewayblack', sans-serif;
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+input::-webkit-input-placeholder {color:#666666;}
+input::-moz-placeholder {color: #666666;}
+input::-ms-input-placeholder {color: #666666;}
+input::placeholder {color: #666666;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.title {
+	display: block;
+	font-size: 40px;
+	font-family: "ralewaybold", sans-serif;
+	line-height: 1.2;
+	color: #000000;
+}
+
+.btn {
+	display: block;
+	box-sizing: border-box;
+	color: #000000;
+	background-color: #ffc100;
+	font-size: 16px;
+	font-family: 'ralewayblack', sans-serif;
+	padding: 16px 20px;
+	text-align: center;
+	width: 100%;
+	max-width: 560px;
+	border-radius: 10px;
+	border: 0;
+}
+.btn:hover {
+	background-color: #e6ae00;
+}
+.btn.btn-gray {
+	background-color: #999999;
+}
+
+.form-btn {
+	display: none;
+}
+.form-btn.active {
+	display: block;
+}
+
+.pay-block {
+	padding: 50px 0;
+	text-align: left;
+}
+.pay-wrap {
+	position: relative;
+	margin-top: 40px;
+	padding-right: 540px;
+}
+.pay-title {
+	display: block;
+	font-size: 16px;
+	font-family: 'ralewaybold', sans-serif;
+	color: #000000;
+	margin-bottom: 10px;
+}
+.payers {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+.payer {
+	margin-right: 30px;
+}
+.payer:last-child {
+	margin-right: 0;
+}
+.payer span {
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+}
+.payer span:before {
+	content: '';
+	display: block;
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid #ffc100;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 10px);
+}
+.payer span.active:before {
+	background-color: #ffc100;
+}
+.pay-form {
+	box-sizing: border-box;
+	display: none;
+	margin: 0 auto;
+}
+.pay-form.active {
+	display: block;
+}
+.pay-fix {
+	padding: 30px;
+	width: 100%;
+	max-width: 510px;
+	border-radius: 10px;
+	background-color: #eff0f4;
+	position: absolute;
+	right: 0;
+	top: 0;
+	box-sizing: border-box;
+}
+.pay-fix.scroll {
+	position: fixed;
+	top: 90px;
+	right: calc(50% - 585px);
+}
+.pay-fix.bottom {
+	top: auto;
+	bottom: 0;
+}
+.pay-fix .text {
+	display: none;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000000;
+}
+.pay-fix .text.active {
+	display: block;
+}
+.pay-fix ul {
+	padding-left: 16px;
+}
+.pay-fix ul li {
+	position: relative;
+	padding-left: 12px;
+}
+.pay-fix ul li:before {
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	left: 0;
+	top: 8px;
+	background-color: #ffc100;
+	border-radius: 50%;
+}
+.pay-buttons {
+	display: none;
+}
+.pay-buttons.active {
+	display: block;
+}
+.pay-buttons.mobile {
+	display: none;
+}
+.pay-buttons-item.mobile {
+	display: none;
+}
+.pay-buttons-item .text {
+	font-size: 14px;
+	color: #000000;
+}
+
+.b-input, .b-select {
+	margin-bottom: 20px;
+}
+.b-input input, .b-input textarea, .b-select select {
+	display: block;
+	box-sizing: border-box;
+	font-family: 'ralewayblack', sans-serif;
+	font-size: 16px;
+	width: 100%;
+	max-width: 560px;
+	padding: 15px 20px;
+	border: 1px solid #eff0f4;
+	background-color: #eff0f4;
+	border-radius: 10px;
+	color: #000000;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-input textarea {
+	resize: none;
+}
+.b-input input:focus, .b-input textarea:focus {
+	background-color: #ffffff;
+	box-shadow: -2px 9px 18px 0 rgba(173,178,199,0.62);
+}
+.b-select .select-wrap {
+	display: block;
+	position: relative;
+	max-width: 560px;
+	cursor: pointer;
+}
+.b-select .select-wrap:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-bottom: 0;
+	border-top-color: #000000;
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 2.5px);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;	
+}
+.b-select.focus .select-wrap:before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.b-select .select-wrap select {
+	cursor: pointer;
+	padding-right: 40px;
+}
+.b-select .select-wrap select option {
+	cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 1280px){
+	.pay-fix.scroll {
+		right: 30px;
+	}
+}
+@media screen and (max-width: 1024px){
+	.pay-wrap {
+		padding-right: 390px;
+	}
+	.pay-fix {
+		max-width: 360px;
+	}
+}
+@media screen and (max-width: 960px){
+	.payers {
+		display: block;
+	}
+	.payer {
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+	.payer:last-child {
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+}
+@media screen and (max-width: 768px){
+	.container {
+		padding: 0 10px;
+	}
+
+	.title {
+		font-size: 20px;
+	}
+
+	.btn {
+		font-size: 14px;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.pay-block {
+		text-align: center;
+	}
+	.pay-wrap {
+		padding-right: 0;
+		text-align: left;
+		max-width: 560px;
+		margin: 20px auto 0;
+	}
+	.pay-fix {
+		display: none;
+	}
+	.pay-title {
+		font-size: 14px;
+	}
+	.pay-buttons.active, .pay-buttons.mobile.active {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.pay-buttons {
+		padding: 20px;
+		border-radius: 10px;
+		background-color: #eff0f4;
+	}
+	.pay-buttons-item {
+		width: calc(50% - 10px);
+	}
+	.pay-buttons-item.mobile {
+		display: block;
+	}
+
+	.b-input input, .b-input textarea, .b-select select {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 460px){
+	.pay-buttons.active, .pay-buttons.mobile.active {
+		display: block;
+	}
+	.pay-buttons-item {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.pay-buttons-item:last-child {
+		margin-bottom: 0;
+	}
+}
