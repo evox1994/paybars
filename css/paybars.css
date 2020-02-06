@@ -393,6 +393,13 @@ input.error, textarea.error {
 		bottom: 0;
 		z-index: 100;
 	}
+	.pay-buttons.bottom {
+		position: absolute;
+		width: calc(100% + 20px);
+		left: -10px;
+		top: auto;
+		bottom: 0;
+	}
 	.pay-buttons-item {
 		width: calc(50% - 10px);
 		max-width: 250px;
