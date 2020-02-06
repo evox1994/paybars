@@ -366,7 +366,7 @@ input.error, textarea.error {
 		position: fixed;
 		left: 0;
 		bottom: 0;
-		z-index: 10;
+		z-index: 100;
 	}
 	.pay-buttons-item {
 		width: calc(50% - 10px);
