@@ -395,8 +395,8 @@ input.error, textarea.error {
 	}
 	.pay-buttons.bottom {
 		position: absolute;
-		width: calc(100% + 20px);
-		left: -10px;
+		width: calc(100% + 30px);
+		left: -15px;
 		top: auto;
 		bottom: 0;
 	}

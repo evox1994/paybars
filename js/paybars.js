@@ -16,6 +16,8 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.dog-inp').inputmask('9999/9999');
+
 	$('input,textarea').on('input',function(){
 		var valid = true;
 		$(this).removeClass('error');
